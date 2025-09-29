@@ -5,7 +5,7 @@ prefix = '!!td'
 
 help_head = """
 ================== §bToDoList §r==================
-You can also input first chr of commands below, e.g. (§blist->l§r)
+You can also input first chr of commands below (e.g. §blist->l§r)
 """.format(prefix=prefix)
 help_body = {
     f"§b{prefix}": "§rshow help info",
@@ -61,7 +61,7 @@ def get_list(target_tag=""):
 
 def get_tags():
     c = []
-    list_head = RText(f'================== §bToDoList-Tags §r==================').c(
+    list_head = RText(f'================== §bToDoList §r==================').c(
         RAction.suggest_command, f'!!td tag').h(f'§b!!td tag')
     tag_list = RTextList()
     tag_list.append(list_head)
